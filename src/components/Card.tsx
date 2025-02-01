@@ -17,7 +17,7 @@ const CountryCard = ({ name, flag, capital, population, languages, onClick, isGr
       className={
         isGridView
           ? "border rounded-xl shadow-md flex flex-col items-center w-full py-2 cursor-pointer hover:scale-105 hover:shadow-lg transition-all duration-500"
-          : "border rounded-xl shadow-md flex items-center justify-center gap-4 p-4 mx-12 cursor-pointer hover:scale-105 hover:shadow-lg transition-all duration-500"
+          : "border rounded-xl shadow-md flex items-center justify-center gap-4 p-4 cursor-pointer hover:scale-105 hover:shadow-lg transition-all duration-500"
       }
     >
       <Image
@@ -25,7 +25,7 @@ const CountryCard = ({ name, flag, capital, population, languages, onClick, isGr
         alt={`Bandera de ${name}`}
         width={isGridView ? 120 : 80}
         height={isGridView ? 80 : 50}
-        className={isGridView ? "object-cover w-auto h-24 mt-2" : "object-cover w-auto h-36 rounded-md"}
+        className={isGridView ? "object-cover w-32 h-24 mt-2" : "object-cover w-56 h-36 rounded-md"}
       />
       <div className={isGridView ? "text-center" : "flex flex-col"}>
         <h2 className="text-lg font-semibold dark:text-white">{name}</h2>
