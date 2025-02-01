@@ -25,7 +25,7 @@ const CountryCard = ({ name, flag, capital, population, languages, onClick, isGr
         alt={`Bandera de ${name}`}
         width={isGridView ? 120 : 80}
         height={isGridView ? 80 : 50}
-        className={isGridView ? "object-cover w-auto h-24 mt-2" : "object-cover w-3/5 h-auto rounded-md"}
+        className={isGridView ? "object-cover w-32 h-24 mt-2" : "object-cover w-3/5 h-auto rounded-md"}
       />
       <div className={isGridView ? "text-center" : "flex flex-col"}>
         <h2 className="text-lg font-semibold dark:text-white">{name}</h2>
