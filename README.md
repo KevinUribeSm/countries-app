@@ -1,33 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Countries App
 
-## Getting Started
+Este proyecto es una aplicación que muestra una lista de países y permite filtrar por región o buscar un país específico. La aplicación está construida con React y utiliza Tailwind CSS para el estilo
 
-First, run the development server:
+## Características
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Visualización de países en un diseño de rejilla o lista.
+- Filtro por región y búsqueda por nombre de país.
+- Modal que muestra detalles de cada país seleccionado.
+- Adaptable para visualización en dispositivos móviles y escritorios.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologías
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React**: Biblioteca para construir la interfaz de usuario.
+- **TypeScript**: Para proporcionar tipos estáticos y mejorar el desarrollo.
+- **Tailwind CSS**: Para un estilo rápido y receptivo.
+- **Material Tailwind**: Para componentes UI con diseño material.
+- **Axios**: Para hacer solicitudes HTTP a la API.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Instalación
 
-## Learn More
+Para instalar y ejecutar el proyecto en tu máquina local, sigue estos pasos:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clona el repositorio:
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navega al directorio
+    ```bash 
+    cd countries-app 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Instala las dependencias
+    ```bash 
+    npm install
+    
+4. Ejecuta el servidor de desarrollo
+    ```bash 
+    npm run dev
+
+5. Abre tu navegador y ve a http://localhost:3000 para ver la aplicación en acción
 
 ## Deploy on Vercel
 
