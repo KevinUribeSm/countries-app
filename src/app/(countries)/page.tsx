@@ -115,7 +115,7 @@ export default function Countries() {
         countryInfo={{
           name: selectedCountry?.name.common ?? 'Sin Nombre',
           flag: selectedCountry?.flags.svg ?? 'Sin Bandera',
-          capital: selectedCountry?.capital[0] || "N/A",
+          capital: selectedCountry?.capital && selectedCountry.capital[0] ? selectedCountry.capital[0] : "N/A",
           population: selectedCountry?.population || 0,
           languages: selectedCountry?.languages
             ? Object.values(selectedCountry.languages).join(", ")
@@ -123,7 +123,7 @@ export default function Countries() {
           area: selectedCountry?.area || 0,
           region: selectedCountry?.region || "N/A",
           currencies: selectedCountry?.currencies
-            ? (Object.values(selectedCountry.currencies)[0] as { name: string }).name
+            ? (Object.values(selectedCountry?.currencies)[0] as { name: string }).name
             : "N/A",
         }}
       />

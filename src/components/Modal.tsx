@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Props {
     isOpen: boolean;
     onClose: () => void;
@@ -20,7 +22,9 @@ const Modal = ({ isOpen, onClose, countryInfo }: Props) => {
         <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
             <div className="bg-slate-200 p-6 rounded-lg w-96 dark:bg-blue-900">
                 <h2 className="text-2xl text-gray-700 font-semibold mb-4 dark:text-white">{countryInfo.name}</h2>
-                <img
+                <Image
+                    width={80}
+                    height={50}
                     src={countryInfo.flag}
                     alt={`Flag of ${countryInfo.name}`}
                     className="w-full h-48 object-cover rounded-md mb-4"

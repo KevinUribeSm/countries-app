@@ -1,3 +1,4 @@
+import { Country } from "@/interfaces";
 import axios from "axios";
 
 export const getCountries = async () => {
@@ -13,7 +14,7 @@ export const getCountries = async () => {
 export const getRegions = async () => {
   try {
     const { data } = await axios.get("https://restcountries.com/v3.1/all");
-    const regions = Array.from(new Set(data.map((country: any) => country.region).filter(Boolean))) as string[]
+    const regions = Array.from(new Set(data.map((country: Country) => country.region).filter(Boolean))) as string[]
 
     return regions;
   } catch (error) {
