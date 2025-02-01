@@ -3,7 +3,7 @@ import ThemeSwitch from './ThemeSwitch';
 
 interface Props {
   value: string;
-  onChange: (e: any) => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onSearch: () => void;
   onClearFilter: () => void;
   regions: string[];
